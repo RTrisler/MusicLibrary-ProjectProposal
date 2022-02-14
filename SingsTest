@@ -1,0 +1,45 @@
+create database music_library1;
+Use music_library1;
+
+-- DDL COMMANDS (schemas)
+
+create table LABELS( 
+	LabID int not null , 
+	LabName varchar(30) not null ,
+	YearEst int, 
+	PRIMARY KEY(LabID, LabName) );
+
+create table ARTIST(
+	ArtistID varchar(10)  NOT NULL,
+	ArtistName varchar(30)  NOT NULL,
+	Birthday varchar(10) ,
+	PRIMARY KEY (ArtistID, ArtistName)
+    ) ;
+    
+create table SONG(
+	SongID varchar(10) NOT NULL,
+	SongTitle varchar(30) not null ,
+    SArtistID varchar(10) not null, 
+	ReleaseDate varchar(10) ,
+	GenreName varchar(30) ,
+	PRIMARY KEY (SongID , SongTitle) ) ;
+    
+ALTER TABLE SONG DROP SArtistID;
+    
+create table ALBUM(
+	AlbumID int not null ,
+	AlbumTitle varchar(30) not null ,
+	ReleaseDate varchar(10) ,
+    PRIMARY KEY(AlbumID, AlbumTitle) 
+	) ;
+    
+create table Sings(
+	ArtistID varchar(10) NOT NULL ,
+	SongID varchar(10) NOT NULL ,
+    PRIMARY KEY(ArtistID, SongID) ,
+    CONSTRAINT ArtistIDFKey
+		FOREIGN KEY (ArtistID) 
+		REFERENCES ARTIST(ArtistID) , 
+	CONSTRAINT SongIDFKey
+		FOREIGN KEY (SongID) 
+        REFERENCES SONG(SongID) );
