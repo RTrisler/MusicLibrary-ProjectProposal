@@ -1,0 +1,53 @@
+-- Blood Orange - Coastal Grooves --
+insert into ARTIST values(00014, 'Blood Orange','Domino Records', '12-23-1985');
+
+insert into SONG values(10015, 'Forget It', 00014, 'Blood Orange','Coastal Grooves', '08-30-11', 'R&B/Soul'),
+						(10016, 'Sutphin Boulevard', 00014, 'Blood Orange','Coastal Grooves', '08-30-11', 'R&B/Soul'),
+						(10017, 'Im Sorry We Lied', 00014, 'Blood Orange','Coastal Grooves', '08-30-11', 'R&B/Soul'),
+						(10018, 'Can We Go Inside Now', 00014, 'Blood Orange','Coastal Grooves', '08-30-11', 'R&B/Soul'),
+						(10019, "S'Cooled ", 00014, 'Blood Orange','Coastal Grooves', '08-30-11', 'R&B/Soul'),
+						(10020, 'Complete Failure', 00014, 'Blood Orange','Coastal Grooves', '08-30-11', 'R&B/Soul'),
+						(10021, 'Instantly Blank(The Goodness)', 00014, 'Blood Orange','Coastal Grooves', '08-30-11', 'R&B/Soul'),
+						(10022, 'The Complete Knock', 00014, 'Blood Orange','Coastal Grooves', '08-30-11', 'R&B/Soul'),
+						(10023, "Are You Sure You're Really Busy?", 00014, 'Blood Orange','Coastal Grooves', '08-30-11', 'R&B/Soul'),
+						(10024, 'Champagne Coast', 00014, 'Blood Orange','Coastal Grooves', '08-30-11', 'R&B/Soul');
+						
+insert into Sings values(00014, 10015),(00014, 10016),(00014, 10017),(00014, 10018),(00014, 10019),(00014, 10020),(00014, 10021),
+						(00014, 10022),(00014, 10023),(00014, 10024);
+
+insert into ALBUM values(5, 'Coastal Grooves', 00014, 'Blood Orange', '08-30-11', 10, null);
+
+insert into AppearsOn values(10015,5,1), (10016,5,2), (10017,5,3), (10018,5,4), (10019,5,5), 
+							(10020,5,6), (10021,5,7), (10022,5,8), (10023,5,9), (10024,5,10);
+ 
+ 
+ -- Fleetwood Mac -- Tango in the night
+ insert into ARTIST values(00015, 'Fleetwood Mac','Columbia Records', '04-13-1987');
+ 
+ insert into SONG values(10025, 'Big Love', 00015, 'Fleetwood Mac','Tango In The Night', '04-13-1987', 'Rock'),
+						(10026, 'Seven Wonders', 00015, 'Fleetwood Mac','Tango In The Night', '04-13-1987', 'Rock'),
+						(10027, 'Everywhere', 00015, 'Fleetwood Mac','Tango In The Night', '04-13-1987', 'Rock'),
+						(10028, 'Caroline', 00015, 'Fleetwood Mac','Tango In The Night', '04-13-1987', 'Rock'),
+						(10029, "Tango in the Night", 00015, 'Fleetwood Mac','Tango In The Night', '04-13-1987', 'Rock'),
+						(10030, 'Mystified', 00015, 'Fleetwood Mac','Tango In The Night', '04-13-1987', 'Rock'),
+						(10031, 'Little Lies', 00015, 'Fleetwood Mac','Tango In The Night', '04-13-1987', 'Rock'),
+						(10032, 'Family Man', 00015, 'Fleetwood Mac','Tango In The Night', '04-13-1987', 'Rock'),
+						(10033, "Welcome to the Room", 00015, 'Fleetwood Mac','Tango In The Night', '04-13-1987', 'Rock'),
+						(10034, "Isn't It Midnight", 00015 , 'Fleetwood Mac' , 'Tango In The Night', '04-13-1987', 'Rock'), 
+                        (10035, "When I See You Again", 00015 , 'Fleetwood Mac' , 'Tango In The Night', '04-13-1987', 'Rock'), 
+                        (10036, "You and I, Pt II", 00015 , 'Fleetwood Mac' , 'Tango In The Night', '04-13-1987', 'Rock');
+ 
+ insert into Sings values(00015, 10025), (00015, 10025), (00015, 10025), (00015, 10025), (00015, 10025), (00015, 10025), (00015, 10025), 
+						(00015, 10025), (00015, 10025), (00015, 10025), (00015, 10025), (00015, 10025);
+ 
+ insert into ALBUM values(6, 'Tango In the Night', 00015, 'Fleetwood Mac', '04-13-87', 12, null);
+ 
+ insert into AppearsOn values(10025,6,1), (10026,6,2), (10027,6,3), (10028,6,4), (10029,6,5), (10030,6,6), 
+							(10031,6,7), (10032,6,8), (10033,6,9), (10034,6,10), (10035,6,11), (10036,6,12);
+ 
+
+insert into USERS values(11101, 'Reid' , 'rgt007@latech.edu') ;
+
+insert into ListensTo values(11101, 00014, 10024, 30) ;
+
+insert into Rates values(11101, 00014, 9.5) ;
